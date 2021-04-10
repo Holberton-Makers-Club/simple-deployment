@@ -1,0 +1,38 @@
+/* styling that affects everything, declare variables here to have global scope */
+:root {
+    /* text */
+    --font-family: "Gloria Hallelujah", cursive;
+
+    /* colors */
+    --color: #888888;
+    --background-color: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+#operating-instructions {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50vh;
+    font-size: 150px;
+    font-weight: bolder;
+    font-family: var(--font-family);
+}
+
+#generate-egg {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid #666666;
+    opacity: 0;
+    z-index: 42;
+}
